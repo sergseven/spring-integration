@@ -23,6 +23,7 @@
         <java.version>1.8</java.version>
         <spring-cloud-zookeeper-dependencies.version>2.0.0.RELEASE
         </spring-cloud-zookeeper-dependencies.version>
+        <spring-cloud-kubernetes-leader.version>1.0.3.RELEASE</spring-cloud-kubernetes-leader.version>
     </properties>
 
     <modules>
@@ -53,6 +54,11 @@
                 <version>${spring-cloud-zookeeper-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-kubernetes-leader</artifactId>
+                <version>${spring-cloud-kubernetes-leader.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.awaitility</groupId>
